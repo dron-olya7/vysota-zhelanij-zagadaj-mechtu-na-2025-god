@@ -1,0 +1,948 @@
+// Variables
+@import url("fonts.css");
+
+
+
+@primary-blue: #0056c6;
+@primary-purple: #843ce0;
+@text-dark: #404247;
+@background-light: #f5f8fd;
+@white: #ffffff;
+@danger-red: #fb5959;
+@gray: #7d7e7e;
+@link-teal: #0c999c;
+@hover-link: #DDF065;
+
+@font-medium: "Montserrat-Medium", sans-serif;
+@font-regular: "Montserrat-Regular";
+
+
+.flex-center() {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: @background-light;
+}
+
+
+h1 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 67.6px;
+    margin-bottom: 20px;
+    color: @text-dark;
+    font-family: @font-medium;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 600;
+    text-align: center;
+    color: @text-dark;
+    margin-bottom: 32px;
+    font-family: @font-medium;
+
+    span {
+        color: @primary-blue;
+    }
+}
+
+.btn, a {
+    font-family: @font-medium;
+    transition: .5s;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #9D67E2;
+    color: #fff;
+    border-color: #9D67E2;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+    margin: 0;
+    color: @text-dark;
+    font-family: @font-regular;
+}
+
+.btn-submit {
+    margin: 0;
+    background-color: @primary-purple;
+    color: @white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 21px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-sbm {
+    margin: 0;
+    border: 2px solid @primary-purple;
+    color: @primary-purple;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 21px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn-application {
+    background-color: @hover-link;
+    border-radius: 20px;
+    width: 279px;
+    height: 70px;
+    display: flex;
+    color: @text-dark;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover, &:active, &:focus {
+    background-color: #E4F192;
+    border-color: #E4F192;
+    color: #404247;
+}
+}
+
+
+
+section {
+    padding: 100px 0;
+}
+
+.container-new {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.header-new {
+    background-color: @primary-blue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    padding: 13px 0;
+    z-index: 100;
+
+    .header-content {
+        .flex-between();
+
+        .logo-content {
+            .flex-center();
+            gap: 24px;
+        }
+
+        .nav-items {
+            .flex-center();
+            gap: 80px;
+
+            ul {
+                .flex-center();
+                list-style: none;
+                gap: 32px;
+
+                li a {
+                    text-decoration: none;
+                    color: @white;
+                    font-weight: 600;
+                    transition: .5s;
+
+                    &:hover{
+                        color: @hover-link;
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-header {
+        text-decoration: none;
+        color: @white;
+        background-color: transparent;
+        border: 2px solid @white;
+        padding: 20px 42px;
+        border-radius: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+
+        &:hover{
+            background-color: @hover-link;
+            border-color: @hover-link;
+            color: #333;
+        }
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+
+.landing-title {
+    padding: 202px 0 100px 0;
+}
+
+.goal-setting-and-time-management {
+    .flex-between();
+    align-items: center;
+
+    .g-s-t-m-description {
+        width: 40%;
+
+        .trening {
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21.6px;
+            color: @primary-blue;
+            letter-spacing: 1px;
+        }
+
+        .location, .date {
+            .flex-center();
+            margin-bottom: 20px;
+            gap: 8px;
+        }
+
+        .date {
+            margin-bottom: 40px;
+        }
+
+        .btns-group {
+            .flex-between();
+
+        }
+    }
+}
+
+
+.about-training {
+    padding-top: 100px;
+    padding-bottom: 0;
+    background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/about.webp);
+
+    .about {
+        .flex-between();
+
+        .about-right {
+            .flex-column();
+            justify-content: space-between;
+        }
+
+        .about-left {
+            max-width: 630px;
+            background-color: @white;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 100px;
+            .flex-column();
+            gap: 20px;
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23.4px;
+            }
+        }
+    }
+}
+
+
+.why-choose-peoples {
+    display: flex;
+    gap: 20px;
+}
+
+.why-choose-people {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.choose-people-cart {
+    .flex-column();
+    width: 263px;
+    height: 195px;
+    background-color: @white;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-between;
+
+    .number {
+        font-family: @font-medium;
+        color: @primary-purple;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 600;
+        margin-top: 16px;
+    }
+
+    p {
+        font-size: 16px;
+        width: 209px;
+        margin: 0;
+        line-height: 20px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+}
+
+
+.expert {
+    p {
+        text-align: center;
+        margin-bottom: 32px;
+        font-weight: 600;
+    }
+
+    .cart-expert {
+        display: flex;
+        background-color: @white;
+        border-radius: 20px;
+        padding: 20px;
+        justify-content: space-between;
+
+        .cart-expert-block-name {
+            display: flex;
+            gap: 32px;
+
+            .expert-img2{
+                display: none;
+            }
+        }
+
+        img {
+            border-radius: 10px;
+            width: 21%;
+        }
+
+        .expert-name {
+            p {
+                text-align: left;
+                margin-bottom: 20px;
+                font-weight: 600;
+            }
+
+            ul {
+                list-style-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/marker.svg);
+                padding-left: 20px;
+                margin: 0;
+                .flex-column();
+                gap: 12px;
+
+                li {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 24px;
+                    font-family: @font-regular;
+                }
+            }
+        }
+    }
+}
+
+
+.what-is-it {
+    background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/whatismbl.webp);
+
+    h2 {
+        color: @white;
+        margin-bottom: 8px;
+
+        span {
+            color: @hover-link;
+        }
+    }
+
+    p {
+        color: @white;
+        text-align: center;
+        margin-bottom: 32px;
+        font-size: 18px;
+    }
+
+    .what-it-carts {
+        .flex-between();
+
+        .what-it-cart {
+            background-color: @white;
+            border-radius: 20px;
+            max-width: 400px;
+            .flex-column();
+            justify-content: space-between;
+
+            p {
+                color: @text-dark;
+                padding: 32px 32px 0 32px;
+                text-align: left;
+                font-weight: 600;
+            }
+
+            img {
+                border-radius: 0 0 20px 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .button-application {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+        font-weight: 600;
+        font-size: 18px;
+
+        
+    }
+}
+
+
+.telegram-links {
+    display: flex;
+    background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/about.webp);
+    border-radius: 20px;
+
+    .telegram-link {
+        padding: 60px 20px 60px 60px;
+
+        h2 {
+            text-align: left;
+            margin-bottom: 23px;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 45px;
+            max-width: 400px;
+            line-height: 21px;
+        }
+    }
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+
+.collection {
+    display: flex;
+    justify-content: center;
+
+    .content {
+        width: 580px;
+    }
+
+    .arrows {
+        position: relative;
+        bottom: 57%;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 32px;
+
+        .s-button-prev, .s-button-next {
+            background-color: @white;
+            border-radius: 20px;
+            padding: 6px;
+            display: flex;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover, &hover{
+                background-color: #D1E2F8;
+            }
+        }
+    }
+}
+
+.slick-initialized .slick-slide {
+    background-color: @white;
+    margin: 0 10px;
+    height: 225px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.img-people {
+    .flex-center();
+    margin-bottom: 20px;
+
+    p {
+        margin-left: 12px;
+        font-size: 18px;
+    }
+}
+
+.people-review p {
+    font-size: 16px;
+    font-weight: 500;
+    color: @text-dark;
+    line-height: 20px;
+    max-width: 373px;
+}
+
+.slider {
+    .slick-arrow {
+        &.slick-prev, &.slick-next {
+            right: 0;
+            font-size: 0;
+            width: 52px;
+            height: 52px;
+            border: none;
+            margin-top: 32px;
+            background-color: @white;
+            border-radius: 20px;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+
+        &.slick-prev {
+            margin-right: 64px;
+            background-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/left.svg) !important;
+            background-repeat: no-repeat;
+            background-size: auto;
+            bottom: -85px;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover, &:active, &:focus {
+                background-color: #D1E2F8;
+            }
+        }
+
+        &.slick-next {
+            background-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/right.svg) !important;
+            background-repeat: no-repeat;
+            background-size: auto;
+            bottom: -85px;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover, &:active, &:focus{
+                background-color: #D1E2F8;
+            }
+        }
+    }
+}
+
+.participants-say{
+    padding: 100px 0 184px 0;
+}
+
+.certificate {
+    background-color: @white;
+
+    .container-new {
+        .flex-between();
+        align-items: center;
+
+        .certificate-left {
+            max-width: 630px;
+
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23px;
+                max-width: 358px;
+            }
+        }
+
+        .certificate-right {
+            background-color: @background-light;
+            border-radius: 20px;
+
+            img {
+                padding: 45px 157px;
+            }
+        }
+    }
+}
+
+
+.intrested-carts {
+        
+    .flex-between();
+    flex-wrap: wrap;
+    .intrested-cart {
+        .flex-column();
+
+        img {
+            width: 379px;
+        }
+
+        span {
+            font-size: 24px;
+            padding: 16px 0 24px 0;
+            width: 364px;
+            font-family: @font-regular;
+        }
+
+        .intrested-link a {
+            .flex-center();
+            color: @link-teal;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            gap: 8px;
+            font-family: @font-medium;
+            transition: .5s;
+
+            &:hover, &:active, &:focus {
+                color: #045c5e;
+                outline: none;
+                text-decoration: none;
+            }
+
+            &:hover svg path, &:active svg path, &:focus svg path{
+                stroke: #045c5e;
+            }
+        }
+    }
+}
+
+
+.cost {
+    background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/price.webp);
+
+    .container-new {
+        .flex-between();
+        background-color: @white;
+        padding: 32px;
+        border-radius: 20px;
+
+        h2 {
+            max-width: 500px;
+            text-align: left;
+
+            span {
+                font-size: 52px;
+                font-weight: 700;
+            }
+        }
+
+        .cost-description {
+            width: 598px;
+
+            span {
+                font-weight: 600;
+                font-size: 18px;
+                color: @text-dark;
+                margin-bottom: 20px;
+                font-family: @font-regular;
+            }
+
+            ul {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                list-style-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/marker.svg);
+                padding-left: 20px;
+
+                li {
+                    font-size: 18px;
+                    font-weight: 400;
+                    margin-bottom: 12px;
+                    font-family: @font-regular;
+                }
+            }
+
+            .places {
+                color: @primary-blue;
+                border: 1px solid @primary-blue;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 16px;
+                font-weight: 600;
+                max-width: 284px !important;
+                line-height: 20.8px;
+                margin-bottom: 32px;
+            }
+
+            .today {
+                color: @gray;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20.8px;
+                margin-bottom: 4px;
+            }
+
+            .cost-price {
+                font-size: 32px;
+                font-weight: 600;
+                line-height: 41.6px;
+                color: @danger-red;
+                margin-bottom: 32px;
+            }
+
+            .cost-btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#toTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    background: #0056C6;
+    padding: 5px;
+    position: fixed;
+    bottom: 30px;
+    height: 50px;
+    right: 32px;
+    cursor: pointer;
+    color: #333;
+    font-size: 11px;
+    border-radius: 20px;
+    z-index: 10;
+    transition: .5s;
+
+    &:hover {
+        background: #006fff;
+    }
+}
+
+
+// Popup Styles
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+  
+  &.active {
+    display: flex;
+  }
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  animation: modalAppear 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #404247;
+  line-height: 1;
+  z-index: 1;
+  
+  &:hover {
+    color: #0056c6;
+  }
+}
+
+.popup-header {
+  text-align: center;
+  margin-bottom: 30px;
+  
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #404247;
+    margin-bottom: 10px;
+    font-family: "Montserrat-Medium", sans-serif;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #7d7e7e;
+    font-family: "Montserrat-Regular";
+  }
+}
+
+.popup-form {
+  .form-group {
+    margin-bottom: 20px;
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #404247;
+      font-family: "Montserrat-Medium", sans-serif;
+      font-size: 14px;
+    }
+    
+    input, textarea {
+      width: 93%;
+      padding: 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 16px;
+      font-family: "Montserrat-Regular";
+      transition: border-color 0.3s;
+      
+      &:focus {
+        outline: none;
+        border-color: #0056c6;
+      }
+      
+      &::placeholder {
+        color: #7d7e7e;
+      }
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+  
+  .error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+  
+  .form-agreement {
+    text-align: center;
+    margin-top: 20px;
+    
+    p {
+      font-size: 14px;
+      color: #7d7e7e;
+      font-family: "Montserrat-Regular";
+      
+      a {
+        color: #0056c6;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  .btn-submit {
+    width: 100%;
+    background-color: #843ce0;
+    color: #fff;
+    border: none;
+    padding: 18px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Montserrat-Medium", sans-serif;
+    transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: darken(#843ce0, 10%);
+    }
+    
+    &:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+  
+  .success-icon {
+    font-size: 60px;
+    color: #28a745;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #404247;
+    margin-bottom: 10px;
+    font-family: "Montserrat-Medium", sans-serif;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #7d7e7e;
+    margin-bottom: 20px;
+    font-family: "Montserrat-Regular";
+  }
+}
+
+
+
+
+@import "adapt";

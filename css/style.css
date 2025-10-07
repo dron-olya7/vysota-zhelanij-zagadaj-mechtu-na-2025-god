@@ -1,0 +1,1222 @@
+@import url("fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #f5f8fd;
+}
+h1 {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 67.6px;
+  margin-bottom: 20px;
+  color: #404247;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+h2 {
+  font-size: 52px;
+  font-weight: 600;
+  text-align: center;
+  color: #404247;
+  margin-bottom: 32px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+h2 span {
+  color: #0056c6;
+}
+.btn,
+a {
+  font-family: "Montserrat-Medium", sans-serif;
+  transition: 0.5s;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: #9D67E2;
+  color: #fff;
+  border-color: #9D67E2;
+}
+p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  margin: 0;
+  color: #404247;
+  font-family: "Montserrat-Regular";
+}
+.btn-submit {
+  margin: 0;
+  background-color: #843ce0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 21px 40px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-sbm {
+  margin: 0;
+  border: 2px solid #843ce0;
+  color: #843ce0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 21px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.btn-application {
+  background-color: #DDF065;
+  border-radius: 20px;
+  width: 279px;
+  height: 70px;
+  display: flex;
+  color: #404247;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-application:hover,
+.btn-application:active,
+.btn-application:focus {
+  background-color: #E4F192;
+  border-color: #E4F192;
+  color: #404247;
+}
+section {
+  padding: 100px 0;
+}
+.container-new {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-new {
+  background-color: #0056c6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  padding: 13px 0;
+  z-index: 100;
+}
+.header-new .header-content {
+  display: flex;
+  justify-content: space-between;
+}
+.header-new .header-content .logo-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-new .header-content .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.header-new .header-content .nav-items ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 32px;
+}
+.header-new .header-content .nav-items ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.header-new .header-content .nav-items ul li a:hover {
+  color: #DDF065;
+}
+.header-new .btn-header {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 20px 42px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+}
+.header-new .btn-header:hover {
+  background-color: #DDF065;
+  border-color: #DDF065;
+  color: #333;
+}
+.header-new .burger-menu {
+  display: none;
+}
+.landing-title {
+  padding: 202px 0 100px 0;
+}
+.goal-setting-and-time-management {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.goal-setting-and-time-management .g-s-t-m-description {
+  width: 40%;
+}
+.goal-setting-and-time-management .g-s-t-m-description .trening {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.6px;
+  color: #0056c6;
+  letter-spacing: 1px;
+}
+.goal-setting-and-time-management .g-s-t-m-description .location,
+.goal-setting-and-time-management .g-s-t-m-description .date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+.goal-setting-and-time-management .g-s-t-m-description .date {
+  margin-bottom: 40px;
+}
+.goal-setting-and-time-management .g-s-t-m-description .btns-group {
+  display: flex;
+  justify-content: space-between;
+}
+.about-training {
+  padding-top: 100px;
+  padding-bottom: 0;
+  background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/about.webp);
+}
+.about-training .about {
+  display: flex;
+  justify-content: space-between;
+}
+.about-training .about .about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-training .about .about-left {
+  max-width: 630px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-training .about .about-left p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+.why-choose-peoples {
+  display: flex;
+  gap: 20px;
+}
+.why-choose-people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.choose-people-cart {
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+  height: 195px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.choose-people-cart .number {
+  font-family: "Montserrat-Medium", sans-serif;
+  color: #843ce0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 16px;
+}
+.choose-people-cart p {
+  font-size: 16px;
+  width: 209px;
+  margin: 0;
+  line-height: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.expert p {
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+.expert .cart-expert {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+.expert .cart-expert .cart-expert-block-name {
+  display: flex;
+  gap: 32px;
+}
+.expert .cart-expert .cart-expert-block-name .expert-img2 {
+  display: none;
+}
+.expert .cart-expert img {
+  border-radius: 10px;
+  width: 21%;
+}
+.expert .cart-expert .expert-name p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.expert .cart-expert .expert-name ul {
+  list-style-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/marker.svg);
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.expert .cart-expert .expert-name ul li {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Montserrat-Regular";
+}
+.what-is-it {
+  background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/whatismbl.webp);
+}
+.what-is-it h2 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.what-is-it h2 span {
+  color: #DDF065;
+}
+.what-is-it p {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 18px;
+}
+.what-is-it .what-it-carts {
+  display: flex;
+  justify-content: space-between;
+}
+.what-is-it .what-it-carts .what-it-cart {
+  background-color: #ffffff;
+  border-radius: 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.what-is-it .what-it-carts .what-it-cart p {
+  color: #404247;
+  padding: 32px 32px 0 32px;
+  text-align: left;
+  font-weight: 600;
+}
+.what-is-it .what-it-carts .what-it-cart img {
+  border-radius: 0 0 20px 0;
+  width: 100%;
+  height: 100%;
+}
+.what-is-it .button-application {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.telegram-links {
+  display: flex;
+  background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/about.webp);
+  border-radius: 20px;
+}
+.telegram-links .telegram-link {
+  padding: 60px 20px 60px 60px;
+}
+.telegram-links .telegram-link h2 {
+  text-align: left;
+  margin-bottom: 23px;
+}
+.telegram-links .telegram-link p {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 45px;
+  max-width: 400px;
+  line-height: 21px;
+}
+.telegram-links img {
+  border-radius: 20px;
+}
+.collection {
+  display: flex;
+  justify-content: center;
+}
+.collection .content {
+  width: 580px;
+}
+.collection .arrows {
+  position: relative;
+  bottom: 57%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+.collection .arrows .s-button-prev,
+.collection .arrows .s-button-next {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 6px;
+  display: flex;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.collection .arrows .s-button-prev:hover,
+.collection .arrows .s-button-next:hover,
+.collection .arrows .s-button-prevhover,
+.collection .arrows .s-button-nexthover {
+  background-color: #D1E2F8;
+}
+.slick-initialized .slick-slide {
+  background-color: #ffffff;
+  margin: 0 10px;
+  height: 225px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.img-people {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.img-people p {
+  margin-left: 12px;
+  font-size: 18px;
+}
+.people-review p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #404247;
+  line-height: 20px;
+  max-width: 373px;
+}
+.slider .slick-arrow.slick-prev,
+.slider .slick-arrow.slick-next {
+  right: 0;
+  font-size: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  margin-top: 32px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+.slider .slick-arrow.slick-prev {
+  margin-right: 64px;
+  background-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/left.svg) !important;
+  background-repeat: no-repeat;
+  background-size: auto;
+  bottom: -85px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider .slick-arrow.slick-prev:hover,
+.slider .slick-arrow.slick-prev:active,
+.slider .slick-arrow.slick-prev:focus {
+  background-color: #D1E2F8;
+}
+.slider .slick-arrow.slick-next {
+  background-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/right.svg) !important;
+  background-repeat: no-repeat;
+  background-size: auto;
+  bottom: -85px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.slider .slick-arrow.slick-next:hover,
+.slider .slick-arrow.slick-next:active,
+.slider .slick-arrow.slick-next:focus {
+  background-color: #D1E2F8;
+}
+.participants-say {
+  padding: 100px 0 184px 0;
+}
+.certificate {
+  background-color: #ffffff;
+}
+.certificate .container-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.certificate .container-new .certificate-left {
+  max-width: 630px;
+}
+.certificate .container-new .certificate-left h2 {
+  text-align: left;
+}
+.certificate .container-new .certificate-left p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 358px;
+}
+.certificate .container-new .certificate-right {
+  background-color: #f5f8fd;
+  border-radius: 20px;
+}
+.certificate .container-new .certificate-right img {
+  padding: 45px 157px;
+}
+.intrested-carts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.intrested-carts .intrested-cart {
+  display: flex;
+  flex-direction: column;
+}
+.intrested-carts .intrested-cart img {
+  width: 379px;
+}
+.intrested-carts .intrested-cart span {
+  font-size: 24px;
+  padding: 16px 0 24px 0;
+  width: 364px;
+  font-family: "Montserrat-Regular";
+}
+.intrested-carts .intrested-cart .intrested-link a {
+  display: flex;
+  align-items: center;
+  color: #0c999c;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  gap: 8px;
+  font-family: "Montserrat-Medium", sans-serif;
+  transition: 0.5s;
+}
+.intrested-carts .intrested-cart .intrested-link a:hover,
+.intrested-carts .intrested-cart .intrested-link a:active,
+.intrested-carts .intrested-cart .intrested-link a:focus {
+  color: #045c5e;
+  outline: none;
+  text-decoration: none;
+}
+.intrested-carts .intrested-cart .intrested-link a:hover svg path,
+.intrested-carts .intrested-cart .intrested-link a:active svg path,
+.intrested-carts .intrested-cart .intrested-link a:focus svg path {
+  stroke: #045c5e;
+}
+.cost {
+  background: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/price.webp);
+}
+.cost .container-new {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+}
+.cost .container-new h2 {
+  max-width: 500px;
+  text-align: left;
+}
+.cost .container-new h2 span {
+  font-size: 52px;
+  font-weight: 700;
+}
+.cost .container-new .cost-description {
+  width: 598px;
+}
+.cost .container-new .cost-description span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #404247;
+  margin-bottom: 20px;
+  font-family: "Montserrat-Regular";
+}
+.cost .container-new .cost-description ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-image: url(https://cbo.ru/storage/landings/celepolaganie-2024/img/marker.svg);
+  padding-left: 20px;
+}
+.cost .container-new .cost-description ul li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 12px;
+  font-family: "Montserrat-Regular";
+}
+.cost .container-new .cost-description .places {
+  color: #0056c6;
+  border: 1px solid #0056c6;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 284px !important;
+  line-height: 20.8px;
+  margin-bottom: 32px;
+}
+.cost .container-new .cost-description .today {
+  color: #7d7e7e;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  margin-bottom: 4px;
+}
+.cost .container-new .cost-description .cost-price {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 41.6px;
+  color: #fb5959;
+  margin-bottom: 32px;
+}
+.cost .container-new .cost-description .cost-btn {
+  width: 100%;
+}
+#toTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  background: #0056C6;
+  padding: 5px;
+  position: fixed;
+  bottom: 30px;
+  height: 50px;
+  right: 32px;
+  cursor: pointer;
+  color: #333;
+  font-size: 11px;
+  border-radius: 20px;
+  z-index: 10;
+  transition: 0.5s;
+}
+#toTop:hover {
+  background: #006fff;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+.popup-overlay.active {
+  display: flex;
+}
+.popup-content {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  animation: modalAppear 0.3s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+@keyframes modalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.popup-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #404247;
+  line-height: 1;
+  z-index: 1;
+}
+.popup-close:hover {
+  color: #0056c6;
+}
+.popup-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.popup-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #404247;
+  margin-bottom: 10px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+.popup-header p {
+  font-size: 16px;
+  color: #7d7e7e;
+  font-family: "Montserrat-Regular";
+}
+.popup-form .form-group {
+  margin-bottom: 20px;
+}
+.popup-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #404247;
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 14px;
+}
+.popup-form .form-group input,
+.popup-form .form-group textarea {
+  width: 93%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Montserrat-Regular";
+  transition: border-color 0.3s;
+}
+.popup-form .form-group input:focus,
+.popup-form .form-group textarea:focus {
+  outline: none;
+  border-color: #0056c6;
+}
+.popup-form .form-group input::placeholder,
+.popup-form .form-group textarea::placeholder {
+  color: #7d7e7e;
+}
+.popup-form .form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.popup-form .error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+.popup-form .form-agreement {
+  text-align: center;
+  margin-top: 20px;
+}
+.popup-form .form-agreement p {
+  font-size: 14px;
+  color: #7d7e7e;
+  font-family: "Montserrat-Regular";
+}
+.popup-form .form-agreement p a {
+  color: #0056c6;
+  text-decoration: none;
+}
+.popup-form .form-agreement p a:hover {
+  text-decoration: underline;
+}
+.popup-form .btn-submit {
+  width: 100%;
+  background-color: #843ce0;
+  color: #fff;
+  border: none;
+  padding: 18px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Montserrat-Medium", sans-serif;
+  transition: background-color 0.3s;
+}
+.popup-form .btn-submit:hover {
+  background-color: #6a20c9;
+}
+.popup-form .btn-submit:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.success-message {
+  text-align: center;
+  padding: 20px;
+}
+.success-message .success-icon {
+  font-size: 60px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+.success-message h3 {
+  font-size: 24px;
+  color: #404247;
+  margin-bottom: 10px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+.success-message p {
+  font-size: 16px;
+  color: #7d7e7e;
+  margin-bottom: 20px;
+  font-family: "Montserrat-Regular";
+}
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 36px;
+    line-height: 46.8px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 41.6px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 23.4px;
+    max-width: 100%;
+  }
+  .btns-group {
+    gap: 10px;
+  }
+  .btns-group .btn-submit,
+  .btns-group .btn-sbm {
+    text-align: center;
+  }
+  .header-new .header-content {
+    margin: 0 45px;
+    align-items: center;
+  }
+  .header-new .logo-content img {
+    height: 36px;
+  }
+  .header-new .nav-items {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: #0056c6;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 100px 0 0 0;
+    transition: 0.5s;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header-new .nav-items.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .header-new .nav-items ul {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .header-new .nav-items ul li a {
+    font-size: 20px;
+    margin: 0;
+  }
+  .header-new .nav-items .btn-header {
+    margin-top: 30px;
+  }
+  .header-new .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+    z-index: 1000;
+    width: 30px;
+    height: 25px;
+    position: relative;
+  }
+  .header-new .burger-menu .bar,
+  .header-new .burger-menu .bar1,
+  .header-new .burger-menu .bar2 {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    margin-bottom: 5px;
+  }
+  .header-new .burger-menu .bar:last-child,
+  .header-new .burger-menu .bar1:last-child,
+  .header-new .burger-menu .bar2:last-child {
+    margin-bottom: 0;
+  }
+  .header-new .burger-menu.active .bar {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  .header-new .burger-menu.active .bar1 {
+    opacity: 0;
+  }
+  .header-new .burger-menu.active .bar2 {
+    transform: rotate(-45deg) translate(3px, -4px);
+  }
+  .landing-title {
+    padding: 126px 0 60px 0;
+  }
+  .landing-title .goal-setting-and-time-management {
+    gap: 25px;
+  }
+  .landing-title .goal-setting-and-time-management .g-s-t-m-description .btns-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .landing-title .goal-setting-and-time-management .image-g-s-t-m {
+    width: 50%;
+  }
+  .landing-title .goal-setting-and-time-management .image-g-s-t-m .big {
+    width: 100%;
+  }
+  .about-training {
+    padding: 60px 0;
+  }
+  .about-training .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 45px;
+  }
+  .about-training .about .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .about-training .about .about-right img {
+    display: none;
+  }
+  .about-training .about .about-left {
+    max-width: 100%;
+    margin: 0;
+  }
+  .why-choose {
+    padding: 60px 45px;
+  }
+  .why-choose .why-choose-peoples {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .why-choose .why-choose-peoples .why-choose-people {
+    gap: 25px;
+  }
+  .why-choose .why-choose-peoples .why-choose-people .choose-people-cart {
+    width: 100%;
+  }
+  .why-choose .why-choose-peoples .why-choose-people .choose-people-cart p {
+    width: 100%;
+  }
+  .expert .container-new {
+    padding: 0 60px;
+  }
+  .expert .container-new .cart-expert {
+    flex-direction: column;
+  }
+  .expert .container-new .cart-expert .cart-expert-block-name {
+    display: flex;
+    flex-direction: column;
+  }
+  .expert .container-new .cart-expert .cart-expert-block-name .expert-img {
+    display: none;
+  }
+  .expert .container-new .cart-expert .cart-expert-block-name .expert-img2 {
+    display: block;
+    width: 100%;
+  }
+  .expert .container-new .cart-expert .cart-expert-block-name .expert-name p {
+    margin-bottom: 13px;
+    text-align: left;
+  }
+  .expert .container-new .cart-expert .cart-expert-block-name .expert-name ul li {
+    margin-bottom: 10px;
+    font-weight: 400;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .what-is-it .container-new {
+    padding: 0 60px;
+  }
+  .what-is-it .container-new .what-it-carts .what-it-cart {
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 285px;
+  }
+  .what-is-it .container-new .what-it-carts .what-it-cart p {
+    padding: 32px 20px 0 20px;
+  }
+  .what-is-it .container-new .what-it-carts .what-it-cart .what-it-cart-img {
+    display: flex;
+  }
+  .telegram .container-new {
+    padding: 0 60px;
+  }
+  .telegram .container-new .telegram-links {
+    flex-direction: column;
+  }
+  .telegram .container-new .telegram-links p {
+    max-width: 100%;
+  }
+  .telegram .container-new .telegram-links .telegram-link {
+    padding: 20px ;
+  }
+  .telegram .container-new .telegram-links .telegram-link .btn-submit {
+    padding: 17px 30px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .collection .content {
+    width: 410px;
+  }
+  .collection .content img {
+    width: 100%;
+  }
+  .how-will-it-be {
+    padding: 60px 0 0;
+  }
+  .how-will-it-be .container-new {
+    padding: 0 60px;
+  }
+  .participants-say {
+    padding: 60px 0 160px 0;
+  }
+  .participants-say .container-new {
+    padding: 0 60px;
+  }
+  .participants-say .slider .slick-arrow.slick-prev {
+    bottom: -86px;
+  }
+  .certificate .container-new {
+    margin: 0 45px;
+  }
+  .certificate .container-new .certificate-left p {
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+  }
+  .certificate .container-new .certificate-right img {
+    width: 190px;
+    padding: 23px 79px;
+  }
+  .interested .container-new {
+    margin: 0 45px;
+  }
+  .interested .container-new .intrested-carts {
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .cost .container-new {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 60px;
+  }
+  .cost .container-new h2 span {
+    font-size: 32px;
+    line-height: 41.6px;
+  }
+  .cost .container-new .cost-description {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .landing-title {
+    padding: 126px 0 60px 0;
+  }
+  .landing-title .goal-setting-and-time-management {
+    flex-direction: column;
+    padding: 0 45px;
+    gap: 25px;
+  }
+  .landing-title .goal-setting-and-time-management .g-s-t-m-description {
+    width: 100%;
+  }
+  .landing-title .goal-setting-and-time-management .image-g-s-t-m {
+    width: 100%;
+  }
+  .landing-title .goal-setting-and-time-management .image-g-s-t-m .big {
+    width: 100%;
+  }
+  .what-is-it .container-new .what-it-carts {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .what-is-it .container-new .what-it-carts .what-it-cart {
+    max-width: 100%;
+  }
+  .popup-content {
+    padding: 30px 20px;
+    margin: 10px;
+  }
+  .popup-header h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 500px) {
+  .header-new .header-content {
+    margin: 0;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .landing-title .goal-setting-and-time-management {
+    padding: 0 5px;
+  }
+  .landing-title .goal-setting-and-time-management .g-s-t-m-description .btns-group {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .landing-title .goal-setting-and-time-management .g-s-t-m-description .btns-group .btn-submit,
+  .landing-title .goal-setting-and-time-management .g-s-t-m-description .btns-group .btn-sbm {
+    max-width: 100%;
+    padding: 21px 0px;
+  }
+  .landing-title .goal-setting-and-time-management .image-g-s-t-m img {
+    width: 100%;
+  }
+  .about-training {
+    padding: 60px 5px;
+  }
+  .about-training .about {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .why-choose {
+    padding: 60px 5px;
+  }
+  .expert .container-new {
+    padding: 0 20px;
+  }
+  .what-is-it .container-new {
+    padding: 0 20px;
+  }
+  .telegram .container-new {
+    padding: 0 20px;
+  }
+  .telegram .container-new h2 {
+    font-size: 24px;
+  }
+  .how-will-it-be .container-new {
+    padding: 0 20px;
+  }
+  .how-will-it-be .container-new .collection .content {
+    width: 386px;
+  }
+  .how-will-it-be .container-new .collection .arrows {
+    position: relative;
+    bottom: 63%;
+  }
+  .participants-say {
+    padding: 60px 0 140px 0;
+  }
+  .participants-say .container-new {
+    padding: 0 20px;
+  }
+  .certificate .container-new {
+    display: flex    ;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .slick-initialized .slick-slide {
+    margin: 0px;
+  }
+  .certificate .container-new {
+    margin: 0 5px;
+  }
+  .certificate .container-new .certificate-right {
+    background-color: #f5f8fd;
+    border-radius: 20px;
+    width: 100%;
+    display: flex        ;
+    justify-content: center;
+  }
+  .certificate .container-new .certificate-right img {
+    width: 100%;
+    padding: 23px 30px;
+  }
+  .interested .container-new {
+    margin: 0 5px;
+  }
+  .interested .container-new .intrested-carts {
+    width: 100%;
+  }
+  .interested .container-new .intrested-carts .intrested-cart {
+    width: 100%;
+  }
+  .interested .container-new .intrested-carts .intrested-cart img {
+    width: 100%;
+  }
+  .interested .container-new .intrested-carts .intrested-cart span {
+    font-size: 16px;
+    padding: 16px 0 24px 0;
+    width: 100%;
+    font-family: "Montserrat-Regular";
+  }
+  .cost .container-new {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 20px;
+  }
+  .popup-overlay.active {
+    width: 91%;
+  }
+  .popup-form .form-group input,
+  .popup-form .form-group textarea {
+    width: 90%;
+  }
+}
+@media (max-width: 330px) {
+  .how-will-it-be .container-new .collection .content {
+    width: 280px;
+  }
+  .popup-content {
+    padding: 30px 20px;
+  }
+  .popup-form .form-group input,
+  .popup-form .form-group textarea {
+    width: 85%;
+  }
+}

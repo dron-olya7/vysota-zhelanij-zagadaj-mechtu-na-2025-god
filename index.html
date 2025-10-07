@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/adapt.css"> -->
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-new" id="header">
+      <div class="container-new">
+        <div class="header-content">
+          <div class="logo-content">
+            <a href="#">
+              <img
+                src="https://cbo.ru/storage/landings/celepolaganie-2024/img/logo_cbo.svg"
+                alt="Логотип ЦБО"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://cbo.ru/storage/landings/celepolaganie-2024/img/mbl.svg"
+                alt="Логотип МБЛ"
+              />
+            </a>
+          </div>
+          <div class="nav-items">
+            <ul>
+              <li><a href="#about-training">О тренинге</a></li>
+              <li><a href="#expert">Тренеры</a></li>
+              <li><a href="#cost">Стоимость</a></li>
+            </ul>
+            <a
+              class="btn btn-header"
+              data-dismiss="none"
+              data-toggle="modal"
+              data-target="order_widget_mdl_popup"
+              id="iv3b"
+              >Записаться</a
+            >
+          </div>
+          <div class="nav-button burger-menu">
+            <div class="bar"></div>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="landing-title">
+      <div class="container-new">
+        <div class="goal-setting-and-time-management">
+          <div class="g-s-t-m-description">
+            <p class="trening">Тренинг</p>
+            <h1>Высота желаний: <br />загадай мечту на&nbsp;2025 год</h1>
+            <div class="location">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_9548_891)">
+                  <path
+                    d="M12 14.6667C12 15.7275 12.4214 16.745 13.1716 17.4951C13.9217 18.2452 14.9391 18.6667 16 18.6667C17.0609 18.6667 18.0783 18.2452 18.8284 17.4951C19.5786 16.745 20 15.7275 20 14.6667C20 13.6058 19.5786 12.5884 18.8284 11.8382C18.0783 11.0881 17.0609 10.6667 16 10.6667C14.9391 10.6667 13.9217 11.0881 13.1716 11.8382C12.4214 12.5884 12 13.6058 12 14.6667Z"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M23.5427 22.2094L17.8853 27.8667C17.3853 28.3662 16.7075 28.6468 16.0007 28.6468C15.2939 28.6468 14.616 28.3662 14.116 27.8667L8.45734 22.2094C6.96563 20.7176 5.94979 18.817 5.53826 16.7478C5.12672 14.6787 5.33799 12.534 6.14534 10.585C6.95269 8.63595 8.31987 6.97008 10.074 5.79803C11.8281 4.62599 13.8904 4.00041 16 4.00041C18.1097 4.00041 20.1719 4.62599 21.926 5.79803C23.6801 6.97008 25.0473 8.63595 25.8547 10.585C26.662 12.534 26.8733 14.6787 26.4618 16.7478C26.0502 18.817 25.0344 20.7176 23.5427 22.2094Z"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_9548_891">
+                    <rect width="32" height="32" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>ресторан «Высота», г. Екатеринбург</p>
+            </div>
+            <div class="date">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_9548_897)">
+                  <path
+                    d="M5.33333 9.33332C5.33333 8.62608 5.61429 7.9478 6.11438 7.4477C6.61448 6.94761 7.29276 6.66666 8 6.66666H24C24.7072 6.66666 25.3855 6.94761 25.8856 7.4477C26.3857 7.9478 26.6667 8.62608 26.6667 9.33332V25.3333C26.6667 26.0406 26.3857 26.7188 25.8856 27.2189C25.3855 27.719 24.7072 28 24 28H8C7.29276 28 6.61448 27.719 6.11438 27.2189C5.61429 26.7188 5.33333 26.0406 5.33333 25.3333V9.33332Z"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M21.3333 4V9.33333"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.6667 4V9.33333"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M5.33333 14.6667H26.6667"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M10.6667 20H13.3333V22.6667H10.6667V20Z"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_9548_897">
+                    <rect width="32" height="32" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>26 января 2025, 15:00-18:00 ЕКБ</p>
+            </div>
+            <div class="btns-group">
+              <a
+                href="#custom-code-12"
+                class="btn btn-submit"
+                data-dismiss="none"
+                data-toggle="modal"
+                data-target="order_widget_mdl_popup"
+                >Зарегистрироваться</a
+              >
+              <a href="#order" class="btn btn-sbm">Оставить заявку</a>
+            </div>
+          </div>
+          <div class="image-g-s-t-m">
+            <img
+              class="big"
+              src="https://cbo.ru/storage/landings/celepolaganie-2024/img/cel2.png"
+              alt="people"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-training" id="about-training">
+      <div class="container-new">
+        <div class="about">
+          <div class="about-right">
+            <h2>О тренинге</h2>
+            <img
+              src="https://cbo.ru/storage/landings/celepolaganie-2024/img/girl.webp"
+              alt="girl"
+            />
+          </div>
+          <div class="about-left">
+            <p>
+              Стань архитектором своего будущего на мастер-классе "Высота
+              желаний: загадай мечту на 2025 год".
+            </p>
+            <p>
+              Январь – прекрасное и самое главное правильное время, чтобы
+              создавать намерения, мечты и цели на предстоящий 2025 год!
+            </p>
+            <p>
+              На нашем тренинге мы отправимся в увлекательное путешествие, где
+              вместе с единомышленниками определим свои главные жизненные
+              приоритеты.
+            </p>
+            <p>
+              Помечтаем, расставим акценты и узнаем, что на самом деле важно для
+              нас!
+            </p>
+            <p>
+              А еще, по традиции, приготовим уникальное блюдо по&nbsp;фирменному
+              рецепту шеф-повара ресторана «Высота».
+            </p>
+            <p>В этот раз это Кабардинский мясной пирог.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose">
+      <div class="container-new">
+        <h2>Почему подростки <span>выбирают</span> ЦБО?</h2>
+        <div class="why-choose-peoples">
+          <div class="why-choose-people">
+            <div class="choose-people-cart">
+              <div class="number">&gt;1 300</div>
+              <p>активных участников</p>
+            </div>
+            <div class="choose-people-cart">
+              <div class="number">15</div>
+              <p>лет формируем развивающую среду для&nbsp;подростков</p>
+            </div>
+            <div class="choose-people-cart">
+              <div class="number">8/10</div>
+              <p>участников возвращаются в&nbsp;ЦБО</p>
+            </div>
+            <div class="choose-people-cart">
+              <div class="number">15+</div>
+              <p>квалифициорованных экспертов</p>
+            </div>
+          </div>
+          <img
+            src="https://cbo.ru/storage/landings/celepolaganie-2024/img/people-choose.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="expert" id="expert">
+      <div class="container-new">
+        <h2><span>Эксперт</span> тренинга</h2>
+        <p>Раскроет потенциал каждого и вдохновит на развитие</p>
+        <div class="cart-expert">
+          <div class="cart-expert-block-name">
+            <img
+              class="expert-img"
+              src="https://cbo.ru/storage/landings/visota/img1.png"
+              alt="Эксперт"
+            />
+            <img
+              class="expert-img2"
+              src="https://cbo.ru/storage/landings/visota/img2.png"
+              alt="Эксперт"
+            />
+            <div class="expert-name">
+              <p>Антон Каблуков</p>
+              <ul>
+                <li>Игротехник</li>
+                <li>Эксперт по командообразованию и самоопределению</li>
+                <li>Старший методист МБУ ИМЦ "Екатеринбургский Дом Учителя"</li>
+                <li>
+                  Методист областного штаба студенческих педагогических отрядов
+                  Свердловской обл. 2018&nbsp;-&nbsp;2021гг.
+                </li>
+                <li>
+                  Организатор всероссийского форума «Территория смыслов» 2021 г
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="what-is-it">
+      <div class="container-new">
+        <h2>Что такое <span>МБЛ</span></h2>
+        <p>
+          Молодежное сообщество, где каждый раскрывает свой творческий
+          и&nbsp;бизнес-потенциал
+        </p>
+        <div class="what-it-carts">
+          <div class="what-it-cart">
+            <div>
+              <p>Особая среда и&nbsp;правильное окружение</p>
+            </div>
+            <div class="what-it-cart-img">
+              <img
+                src="https://cbo.ru/storage/landings/celepolaganie-2024/img/what-is-it1.webp"
+                alt="Boy"
+              />
+            </div>
+          </div>
+          <div class="what-it-cart">
+            <div>
+              <p>Поддержка и вдохновение от&nbsp;лучших бизнес-тренеров</p>
+            </div>
+            <div class="what-it-cart-img">
+              <img
+                src="https://cbo.ru/storage/landings/celepolaganie-2024/img/what-is-it2.webp"
+                alt="Girl"
+              />
+            </div>
+          </div>
+          <div class="what-it-cart">
+            <div>
+              <p>Обучение современным навыкам взрослой жизни</p>
+            </div>
+            <div class="what-it-cart-img">
+              <img
+                src="https://cbo.ru/storage/landings/celepolaganie-2024/img/what-is-it3.webp"
+                alt="Girl"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="button-application">
+          <a href="#order" class="btn btn-application">Оставить заявку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="telegram">
+      <div class="container-new">
+        <div class="telegram-links">
+          <div class="telegram-link">
+            <h2>Присоединяйтесь к&nbsp;МБЛ в&nbsp;Telegram</h2>
+            <p>
+              Вас ждут новые знакомства и полезные материалы от опытных
+              экспертов МБЛ
+            </p>
+            <a href="#" class="btn btn-submit">Подписаться</a>
+          </div>
+          <img
+            src="https://cbo.ru/storage/landings/celepolaganie-2024/img/telegram-girl.webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="how-will-it-be">
+      <div class="container-new">
+        <h2>Как это будет</h2>
+        <div class="collection">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Слайды -->
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/1.png"
+                  alt="Описание 1"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/2.png"
+                  alt="Описание 2"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/3.png"
+                  alt="Описание 3"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/4.png"
+                  alt="Описание 4"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/5.png"
+                  alt="Описание 5"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/6.png"
+                  alt="Описание 6"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/visota/pic/7.png"
+                  alt="Описание 7"
+                />
+              </div>
+              <div class="content swiper-slide">
+                <img
+                  src="https://cbo.ru/storage/landings/celepolaganie-2024/img/mbl/how12.webp"
+                  alt="Описание 8"
+                />
+              </div>
+            </div>
+
+            <!-- Стрелки навигации -->
+            <div class="arrows">
+              <div class="s-button-prev">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_9639_290)">
+                    <path
+                      d="M8.33337 20L31.6667 20"
+                      fill="#0056C6"
+                      stroke="#0056C6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M8.33337 20L15 26.6667"
+                      fill="#0056C6"
+                      stroke="#0056C6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                    <path
+                      d="M8.33337 19.9997L15 13.333"
+                      fill="#0056C6"
+                      stroke="#0056C6"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_9639_290">
+                      <rect width="40" height="40" fill="white"></rect>
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="s-button-next">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.667 20L8.33366 20"
+                    fill="#0056C6"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M31.667 20L25.0003 13.3333"
+                    fill="#0056C6"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M31.667 20.0003L25.0003 26.667"
+                    fill="#0056C6"
+                    stroke="#0056C6"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="participants-say">
+      <div class="container-new">
+        <h2>Что говорят <span>участники</span> мастер-классов</h2>
+        <div class="wrapper">
+          <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slider-item">
+              <div class="slide-name">
+                <div class="img-people">
+                  <img
+                    src="https://cbo.ru/storage/landings/celepolaganie-2024/img/review1.webp"
+                    alt="Полина Б."
+                  />
+                  <p>Полина Б.</p>
+                </div>
+                <div class="people-review">
+                  <p>
+                    Спикер безумно приятная, быстро вовлекла в работу, заставила
+                    почувствовать себя увереннее. Было весело. Я многое для себя
+                    почерпнула. 10/10
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slider-item">
+              <div class="slide-name">
+                <div class="img-people">
+                  <img
+                    src="https://cbo.ru/storage/landings/celepolaganie-2024/img/review2.webp"
+                    alt="Тимур К."
+                  />
+                  <p>Тимур К.</p>
+                </div>
+                <div class="people-review">
+                  <p>
+                    Крутая и актуальная тема! Автор профессиональный спикер,
+                    четкая дикция, тренинг живой, держится открыто, очень
+                    добрая.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slider-item">
+              <div class="slide-name">
+                <div class="img-people">
+                  <img
+                    src="https://cbo.ru/storage/landings/celepolaganie-2024/img/review3.webp"
+                    alt="Настя М."
+                  />
+                  <p>Настя М.</p>
+                </div>
+                <div class="people-review">
+                  <p>
+                    Мне очень понравилось, появилась мотивация, в дальнейшем
+                    хочется развивать свою речь. Екатерина очень красивая и
+                    активная девушка.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Duplicate slides for loop effect -->
+            <div class="slider-item">
+              <div class="slide-name">
+                <div class="img-people">
+                  <img
+                    src="https://cbo.ru/storage/landings/celepolaganie-2024/img/review1.webp"
+                    alt="Полина Б."
+                  />
+                  <p>Полина Б.</p>
+                </div>
+                <div class="people-review">
+                  <p>
+                    Спикер безумно приятная, быстро вовлекла в работу, заставила
+                    почувствовать себя увереннее. Было весело. Я многое для себя
+                    почерпнула. 10/10
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="slide-name">
+                <div class="img-people">
+                  <img
+                    src="https://cbo.ru/storage/landings/celepolaganie-2024/img/review2.webp"
+                    alt="Тимур К."
+                  />
+                  <p>Тимур К.</p>
+                </div>
+                <div class="people-review">
+                  <p>
+                    Крутая и актуальная тема! Автор профессиональный спикер,
+                    четкая дикция, тренинг живой, держится открыто, очень
+                    добрая.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-item">
+              <div class="slide-name">
+                <div class="img-people">
+                  <img
+                    src="https://cbo.ru/storage/landings/celepolaganie-2024/img/review3.webp"
+                    alt="Настя М."
+                  />
+                  <p>Настя М.</p>
+                </div>
+                <div class="people-review">
+                  <p>
+                    Мне очень понравилось, появилась мотивация, в дальнейшем
+                    хочется развивать свою речь. Екатерина очень красивая и
+                    активная девушка.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certificate">
+      <div class="container-new">
+        <div class="certificate-left">
+          <h2>Подтверждение <span> навыков</span></h2>
+          <p>
+            Каждый участник получает Сертификат Бизнес-школы ЦБО
+            о&nbsp;прохождении мастер-класса.
+          </p>
+        </div>
+        <div class="certificate-right">
+          <img
+            src="https://cbo.ru/storage/landings/celepolaganie-2024/img/certificate.webp"
+            alt="Сертификат"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="interested">
+      <div class="container-new">
+        <h2>Вам может быть интересно</h2>
+        <div class="intrested-carts">
+          <div class="intrested-cart">
+            <img
+              src="https://cbo.ru/storage/landings/intresting/kruiz.png"
+              alt=""
+            />
+            <span
+              >Intellectual voyage. «Раскрой свой потенциал. Курс на
+              будущее»</span
+            >
+            <div class="intrested-link">
+              <a href="#"
+                >Узнать подробнее
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.16666 10.4993H15.8333M15.8333 10.4993L10 4.66602M15.8333 10.4993L10 16.3327"
+                    stroke="#0C999C"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="intrested-cart">
+            <img
+              src="https://cbo.ru//storage/landings/intresting/elbrus.png"
+              alt=""
+            />
+            <span> Молодежный горный бизнес-лагерь ЭЛЬБРУС «Путь горца» </span>
+            <div class="intrested-link">
+              <a href="#"
+                >Узнать подробнее
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.16666 10.4993H15.8333M15.8333 10.4993L10 4.66602M15.8333 10.4993L10 16.3327"
+                    stroke="#0C999C"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="intrested-cart">
+            <img
+              src="https://cbo.ru/storage/landings/intresting/baikal.png"
+              alt=""
+            />
+            <span>
+              Молодежный Бизнес‑лагерь на Байкале - Раскрой свой потенциал
+            </span>
+            <div class="intrested-link">
+              <a href="#"
+                >Узнать подробнее
+                <svg
+                  width="20"
+                  height="21"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.16666 10.4993H15.8333M15.8333 10.4993L10 4.66602M15.8333 10.4993L10 16.3327"
+                    stroke="#0C999C"
+                    stroke-width="1.67"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cost" id="cost">
+      <div class="container-new">
+        <h2><span>Стоимость участия</span></h2>
+        <div class="cost-description">
+          <span>Что входит в стоимость:</span>
+          <ul>
+            <li>Сформулированные вдохновляющие цели на предстоящий 2025 год</li>
+            <li>Конкретные действия для их реализации</li>
+            <li>
+              Возможность общения и поддержку от таких же
+              мечтателей-единомышленников
+            </li>
+            <li>
+              Приготовление Кабардинского мясного пирога, под руководством
+              шеф-повара ресторана
+            </li>
+          </ul>
+          <p class="places">Количество мест ограничено!</p>
+          <p class="today">Сегодня</p>
+          <p class="cost-price">3 000</p>
+          <a
+            class="btn btn-application cost-btn"
+            data-dismiss="none"
+            data-toggle="modal"
+            data-target="order_widget_mdl_popup"
+            id="iv3b"
+            >Зарегистрироваться</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div id="toTop">
+      <img
+        src="https://cbo.ru/storage/landings/celepolaganie-2024/img/arrow-up.svg"
+        alt=""
+      />
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/how-will-it-be.js"></script>
+    <script src="js/participants-say.js"></script>
+    <script src="js/popup-regis.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/top.js"></script>
+  </body>
+</html>
